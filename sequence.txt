@@ -41,5 +41,6 @@ git remote add origin https://github.com/danilakriukov/korzh_project.git
 git push
 
 #Push changes into the 2branch
-git checkout -b 2branch
+git add .
+git commit -am "Saves to 2branch"
 git push origin 2branch
