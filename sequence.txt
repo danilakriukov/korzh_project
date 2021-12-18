@@ -28,5 +28,18 @@ git commit -am "We made the first save"
 git push 
 
 18.12.2021
-C:\Users\Пользователь\OneDrive\Рабочий стол
-cd /c/Users/Пользователь/OneDrive/Рабочий стол/korzh_project
+cd /e/korzh_project
+git config --global user.name "Danila Kriukov"
+git config --global user.email "2018.danilakriukov@gmail.com"
+git config --global push.default matching
+git config --global alias.co checkout
+git init
+
+git add .
+git commit -am "Basis"
+git remote add origin https://github.com/danilakriukov/korzh_project.git
+git push
+
+#Push changes into the 2branch
+git checkout -b 2branch
+git push origin 2branch
